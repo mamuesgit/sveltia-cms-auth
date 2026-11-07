@@ -1,3 +1,9 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Für den Login des VfB-Tamm-CMS. Nicht geheim; GITHUB_CLIENT_SECRET ist nur als
+# verschlüsseltes Secret im Cloudflare-Dashboard hinterlegt (bleibt bei Deploys erhalten).
+[vars]
+ALLOWED_DOMAINS = "vfbtamm.mamuesmailbox.workers.dev, vfbtamm.de, www.vfbtamm.de"
+GITHUB_CLIENT_ID = "Ov23liMWDJPjqHiq2Frz"
